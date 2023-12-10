@@ -1,9 +1,11 @@
 .header {
   display: flex;
+  position: fixed;
   flex-direction: column;
   min-width: 306px;
-  background-color: $background_color;
-  padding: 36px 61px 0 28px;
+  height: 100%;
+  box-shadow: $box_shadow;
+  padding: 36px 28px 0 28px;
 
   &__logo {
     &__container {

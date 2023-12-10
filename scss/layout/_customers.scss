@@ -1,0 +1,51 @@
+.customers {
+  box-shadow: $box_shadow;
+  padding: 30px 38px;
+
+  &__head {
+    margin-bottom: 40px;
+    &__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__info {
+        &__title {
+          color: $header_text_color;
+          font-weight: 600;
+        }
+
+        &__subtitle {
+          color: $active_text_color;
+          font-weight: 400;
+        }
+      }
+
+      &__search {
+        background: #f9fbff;
+        min-width: 216px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 7px;
+        border-radius: 10px;
+
+        &__input {
+          height: 100%;
+          width: 100%;
+          border: none;
+
+          &:focus {
+            outline: none;
+          }
+
+          &::placeholder {
+            font-size: 12px;
+            color: $light_text_color;
+          }
+        }
+      }
+    }
+  }
+}

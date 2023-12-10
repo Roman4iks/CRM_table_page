@@ -106,23 +106,32 @@
           </div>
         </div>
       </header>
-      <main>
+      <main class="main">
         <h1 class="main__title">Hello Evano 👋🏼,</h1>
         <section class="customers">
           <div class="customers__head">
-            <h2 class="customers__head__title">All Customers</h2>
-            <p class="customers__head__subtitle">Active Members</p>
+            <div class="customers__head__block">
+              <div class="customers__head__block__info">
+                <h2 class="customers__head__block__info__title">
+                  All Customers
+                </h2>
+                <p class="customers__head__block__info__subtitle">
+                  Active Members
+                </p>
+              </div>
+              <div class="customers__head__block__search">
+                <svg width="24" heigth="24">
+                  <use href="./src/icons.svg#search"></use>
+                </svg>
+                <input
+                  type="text"
+                  class="customers__head__block__search__input"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
           </div>
-          <div class="customers__head__search">
-            <svg width="24" heigth="24">
-              <use href="./src/icons.svg#search"></use>
-            </svg>
-            <input
-              type="text"
-              class="custemers__head__search__input"
-              placeholder="Search"
-            />
-          </div>
+
           <div class="customers__content">
             <table class="content-table">
               <thead class="content-table__head">
@@ -142,7 +151,9 @@
                   <td class="content-table__item">(225) 555-0118</td>
                   <td class="content-table__item">jane@microsoft.com</td>
                   <td class="content-table__item">United States</td>
-                  <td class="content-table__item">Active</td>
+                  <td class="content-table__item">
+                    <div class="content-table__item--active">Active</div>
+                  </td>
                 </tr>
                 <tr class="content-table__row">
                   <td class="content-table__item">Floyd Miles</td>
@@ -150,7 +161,9 @@
                   <td class="content-table__item">(205) 555-0100</td>
                   <td class="content-table__item">floyd@yahoo.com</td>
                   <td class="content-table__item">Kiribati</td>
-                  <td class="content-table__item">Inactive</td>
+                  <td class="content-table__item">
+                    <div class="content-table__item--inactive">Inactive</div>
+                  </td>
                 </tr>
                 <tr class="content-table__row">
                   <td class="content-table__item">Ronald Richards</td>
@@ -158,7 +171,9 @@
                   <td class="content-table__item">(302) 555-0107</td>
                   <td class="content-table__item">ronald@adobe.com</td>
                   <td class="content-table__item">Israel</td>
-                  <td class="content-table__item">Inactive</td>
+                  <td class="content-table__item">
+                    <div class="content-table__item--inactive">Inactive</div>
+                  </td>
                 </tr>
                 <tr class="content-table__row">
                   <td class="content-table__item">Marvin McKinney</td>
@@ -166,7 +181,9 @@
                   <td class="content-table__item">(252) 555-0126</td>
                   <td class="content-table__item">marvin@tesla.com</td>
                   <td class="content-table__item">Iran</td>
-                  <td class="content-table__item">Active</td>
+                  <td class="content-table__item">
+                    <div class="content-table__item--active">Active</div>
+                  </td>
                 </tr>
                 <tr class="content-table__row">
                   <td class="content-table__item">Jerome Bell</td>
@@ -174,7 +191,9 @@
                   <td class="content-table__item">(629) 555-0129</td>
                   <td class="content-table__item">jerome@google.com</td>
                   <td class="content-table__item">Réunion</td>
-                  <td class="content-table__item">Active</td>
+                  <td class="content-table__item">
+                    <div class="content-table__item--active">Active</div>
+                  </td>
                 </tr>
                 <tr class="content-table__row">
                   <td class="content-table__item">Kathryn Murphy</td>
@@ -182,7 +201,9 @@
                   <td class="content-table__item">(406) 555-0120</td>
                   <td class="content-table__item">kathryn@microsoft.com</td>
                   <td class="content-table__item">Curaçao</td>
-                  <td class="content-table__item">Active</td>
+                  <td class="content-table__item">
+                    <div class="content-table__item--active">Active</div>
+                  </td>
                 </tr>
                 <tr class="content-table__row">
                   <td class="content-table__item">Jacob Jones</td>
@@ -190,7 +211,9 @@
                   <td class="content-table__item">(208) 555-0112</td>
                   <td class="content-table__item">jacob@yahoo.com</td>
                   <td class="content-table__item">Brazil</td>
-                  <td class="content-table__item">Active</td>
+                  <td class="content-table__item">
+                    <div class="content-table__item--active">Active</div>
+                  </td>
                 </tr>
                 <tr class="content-table__row">
                   <td class="content-table__item">Kristin Watson</td>
@@ -198,29 +221,29 @@
                   <td class="content-table__item">(704) 555-0127</td>
                   <td class="content-table__item">kristin@facebook.com</td>
                   <td class="content-table__item">Åland Islands</td>
-                  <td class="content-table__item">Inactive</td>
+                  <td class="content-table__item">
+                    <div class="content-table__item--inactive">Inactive</div>
+                  </td>
                 </tr>
               </tbody>
             </table>
             <div class="content__footer">
-              <div class="content__info">
-                <p class="content__info-text">
-                  Showing data 1 to 8 of 256K entries
-                </p>
-              </div>
-              <div class="content-pagination">
-                <span class="content-pagination__item">&lt;</span>
-                <span class="content-pagination__item">1</span>
+              <p class="content__footer__text">
+                Showing data 1 to 8 of 256K entries
+              </p>
+              <div class="content__footer__pagination">
+                <span class="content__footer__pagination__item">&lt;</span>
+                <span class="content__footer__pagination__item">1</span>
                 <span
-                  class="content-pagination__item content-pagination__item--active"
+                  class="content__footer__pagination__item content__footer__pagination__item--active"
                   >2</span
                 >
-                <span class="content-pagination__item">2</span>
-                <span class="content-pagination__item">3</span>
-                <span class="content-pagination__item">4</span>
-                <span class="content-pagination__item">...</span>
-                <span class="content-pagination__item">40</span>
-                <span class="content-pagination__item">&gt;</span>
+                <span class="content__footer__pagination__item">2</span>
+                <span class="content__footer__pagination__item">3</span>
+                <span class="content__footer__pagination__item">4</span>
+                <span class="content__footer__pagination__item">...</span>
+                <span class="content__footer__pagination__item">40</span>
+                <span class="content__footer__pagination__item">&gt;</span>
               </div>
             </div>
           </div>

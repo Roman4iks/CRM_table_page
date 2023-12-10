@@ -2,10 +2,9 @@
 
 @import './base';
 
-@import './layout/header';
+@import './components/container';
 
-.container {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-}
+@import './layout/header';
+@import './layout/main';
+@import './layout/customers';
+@import './layout/content';
