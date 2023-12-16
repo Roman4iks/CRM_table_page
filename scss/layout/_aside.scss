@@ -1,9 +1,9 @@
-.header {
+.aside {
+  float: left;
   display: flex;
-  position: fixed;
   flex-direction: column;
+  height: 140%;
   min-width: 306px;
-  height: 100%;
   box-shadow: $box_shadow;
   padding: 36px 28px 0 28px;
 
@@ -60,6 +60,7 @@
       }
     }
   }
+
   &__user {
     display: flex;
     gap: 12px;

@@ -14,10 +14,10 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <div class="header__logo">
+      <aside class="aside">
+        <div class="aside__logo">
           <a href="#">
-            <div class="header__logo__container">
+            <div class="aside__logo__container">
               <svg width="37" height="37">
                 <use href="./src/icons.svg#logo"></use>
               </svg>
@@ -28,88 +28,90 @@
             </div>
           </a>
         </div>
-        <ul class="header__menu">
-          <li class="header__menu__item">
-            <div class="header__menu__item__content">
+        <ul class="aside__menu">
+          <li class="aside__menu__item">
+            <div class="aside__menu__item__content">
               <svg width="24" height="24">
                 <use href="./src/icons.svg#key-square"></use>
               </svg>
               <p>Dashboard</p>
             </div>
-            <svg width="16" height="16" class="header__menu__item--arrow">
+            <svg width="16" height="16" class="aside__menu__item--arrow">
               <use href="./src/icons.svg#chevron-right"></use>
             </svg>
           </li>
-          <li class="header__menu__item">
-            <div class="header__menu__item__content">
+          <li class="aside__menu__item">
+            <div class="aside__menu__item__content">
               <svg width="24" height="24">
                 <use href="./src/icons.svg#3d-square"></use>
               </svg>
               <p>Product</p>
             </div>
-            <svg width="16" height="16" class="header__menu__item--arrow">
+            <svg width="16" height="16" class="aside__menu__item--arrow">
               <use href="./src/icons.svg#chevron-right"></use>
             </svg>
           </li>
-          <li class="header__menu__item header__menu__item--active">
-            <div class="header__menu__item__content">
+          <li class="aside__menu__item aside__menu__item--active">
+            <div class="aside__menu__item__content">
               <svg width="24" height="24">
                 <use href="./src/icons.svg#user-square"></use>
               </svg>
               <p>Customers</p>
             </div>
-            <svg width="16" height="16" class="header__menu__item--arrow">
+            <svg width="16" height="16" class="aside__menu__item--arrow">
               <use href="./src/icons.svg#chevron-right"></use>
             </svg>
           </li>
-          <li class="header__menu__item">
-            <div class="header__menu__item__content">
+          <li class="aside__menu__item">
+            <div class="aside__menu__item__content">
               <svg width="24" height="24">
                 <use href="./src/icons.svg#wallet-money"></use>
               </svg>
               <p>Income</p>
             </div>
-            <svg width="16" height="16" class="header__menu__item--arrow">
+            <svg width="16" height="16" class="aside__menu__item--arrow">
               <use href="./src/icons.svg#chevron-right"></use>
             </svg>
           </li>
-          <li class="header__menu__item">
-            <div class="header__menu__item__content">
+          <li class="aside__menu__item">
+            <div class="aside__menu__item__content">
               <svg width="24" height="24">
                 <use href="./src/icons.svg#discount-shape"></use>
               </svg>
               <p>Promote</p>
             </div>
-            <svg width="16" height="16" class="header__menu__item--arrow">
+            <svg width="16" height="16" class="aside__menu__item--arrow">
               <use href="./src/icons.svg#chevron-right"></use>
             </svg>
           </li>
-          <li class="header__menu__item">
-            <div class="header__menu__item__content">
+          <li class="aside__menu__item">
+            <div class="aside__menu__item__content">
               <svg width="24" height="24">
                 <use href="./src/icons.svg#message-question"></use>
               </svg>
               <p>Help</p>
             </div>
-            <svg width="16" height="16" class="header__menu__item--arrow">
+            <svg width="16" height="16" class="aside__menu__item--arrow">
               <use href="./src/icons.svg#chevron-right"></use>
             </svg>
           </li>
         </ul>
-        <div class="header__user">
-          <div class="header__user__avatar">
+        <div class="aside__user">
+          <div class="aside__user__avatar">
             <img src="./src/avatar.png" alt="avatar" height="42" width="42" />
           </div>
-          <div class="header__user__info">
-            <p class="header__user__name">Evano</p>
-            <p class="header__user__role">Project Manager</p>
+          <div class="aside__user__info">
+            <p class="aside__user__name">Evano</p>
+            <p class="aside__user__role">Project Manager</p>
           </div>
         </div>
-      </header>
+      </aside>
       <main class="main">
-        <h1 class="main__title">Hello Evano 👋🏼,</h1>
-        <section class="customers">
-          <div class="customers__head">
+        <article>
+          <h1 class="main__title">Hello Evano 👋🏼,</h1>
+        </article>
+        <article class="customers">
+          <section class="customers__head">
             <div class="customers__head__block">
               <div class="customers__head__block__info">
                 <h2 class="customers__head__block__info__title">
@@ -130,9 +132,8 @@
                 />
               </div>
             </div>
-          </div>
-
-          <div class="customers__content">
+          </section>
+          <section class="customers__content">
             <table class="content-table">
               <thead class="content-table__head">
                 <tr class="content-table__row">
@@ -246,8 +247,8 @@
                 <span class="content__footer__pagination__item">&gt;</span>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </article>
       </main>
     </div>
   </body>
